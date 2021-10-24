@@ -8,7 +8,6 @@ body {
     color: #000000;
     font-size: 24px;
     font-weight: 400;
-    font-style: normal;
 }
 
 .wrapper {
@@ -88,6 +87,7 @@ body {
 }
 .main-block__title {
     color: #FFFFFF;
+    min-width: 738px;
     font-size: 48px;
     font-weight: 900;
     line-height: 126.5%;
@@ -97,6 +97,7 @@ body {
     color: #FFFFFF;
     margin-top: 8px;
     font-size: 24px;
+    font-style: normal;
     font-weight: normal;
 }
 .main-block__img1 {
@@ -127,14 +128,13 @@ body {
     max-width: 121.46px;
 }
 /*-------------------------main second block-----------------------*/
-.main__ellipse {
-    position: absolute;
-    max-width: 734px;
-    height: 457px;
+/*.main__ellipse {
+    width: 734px;
+    height: 457px
     border-radius: 367px / 229px;
     background: #ff0000;
     z-index: 3;
-}
+}*/
 .main__about-us {
 }
 .about-us {
@@ -385,6 +385,8 @@ body {
 .footer__footer-block {
 }
 .footer-block {
+    display: flex;
+    justify-content: space-between;
 }
 .footer-block__address {
     margin-top: 39px;
@@ -394,15 +396,34 @@ body {
     color: #000;
 }
 .footer-block__links {
-}
-.footer-block__items {
+    display: flex;
     margin-top: 40px;
 }
+.links__circle{
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background:#C0C0C0;
+}
+.links__circle:not(:last-child){ 
+    margin-right: 14px;
+}
+.links__circle_vk {
+}
+.links__circle_facebook {
+}
+.links__circle_instagram {
+    margin-left: 1px;
+}
+.links__circle_telegram {
+    margin-right: 1px;
+}
+
 .footer__rights {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 19px;
-}
-.footer__rights_img {
 }
 
